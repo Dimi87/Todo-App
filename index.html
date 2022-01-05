@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Todo App</h1>
+    </header>
+     <main>
+      <label for="radio-all">All</label>
+      <input type="radio" name="filter" value="all" id="radio-all" checked="" ng-reflect-name="filter" ng-reflect-value="all" ng-reflect-model="all">
+      <br>
+      <label for="radio-open">Open</label>
+      <input type="radio" name="filter" value="open" id="radio-open" ng-reflect-name="filter" ng-reflect-value="open" ng-reflect-model="all">
+      <br>
+      <label for="radio-done">Done</label>
+      <input type="radio" name="filter" value="done" id="radio-done" ng-reflect-name="filter" ng-reflect-value="done" ng-reflect-model="all">
+      <br>
+      <br>
+      <button>Remove done Todos</button>
+      <br>
+      <br>
+      <input type="text" placeholder="Whats up?" id="text" />
+      <button id="toggle-button">Add</button>
+     </main>
+    <script src="script.js"></script>
 </body>
 </html>
