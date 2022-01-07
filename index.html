@@ -12,21 +12,27 @@
         <h1>Todo App</h1>
     </header>
      <main>
-      <label for="radio-all">All</label>
-      <input type="radio" name="filter" value="all" id="radio-all" checked="" ng-reflect-name="filter" ng-reflect-value="all" ng-reflect-model="all">
+      <label for="all-radio">All</label>
+      <input type="radio" name="filter-chekbox" id="all-radio">
       <br>
-      <label for="radio-open">Open</label>
-      <input type="radio" name="filter" value="open" id="radio-open" ng-reflect-name="filter" ng-reflect-value="open" ng-reflect-model="all">
+      <label for="open-radio">Open</label>
+      <input type="radio" name="filter-chekbox" id="open-radio">
       <br>
-      <label for="radio-done">Done</label>
-      <input type="radio" name="filter" value="done" id="radio-done" ng-reflect-name="filter" ng-reflect-value="done" ng-reflect-model="all">
-      <br>
-      <br>
-      <button>Remove done Todos</button>
+      <label for="done-radio">Done</label>
+      <input type="radio" name="filter-chekbox" id="done-radio">
       <br>
       <br>
-      <input type="text" placeholder="Whats up?" id="text" />
-      <button id="toggle-button">Add</button>
+      <button id="remove-button">Remove done Todos</button>
+      <br>
+      <br>
+      <input type="text" placeholder="Whats up?" id="input-todo" />
+      <button id="add-todo-button">Add</button>
+      <div>
+          <ul class="todo-list">
+              <li> <label for="test-todo"> Keller aufräumen</label> <input type="checkbox" id="test-todo"> </li>
+              <li> <label for="test-todo"> Hausaufgabe machen</label> <input type="checkbox" id="test-todo"> </li>
+          </ul>       
+      </div>
      </main>
     <script src="script.js"></script>
 </body>
